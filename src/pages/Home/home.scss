@@ -1,12 +1,17 @@
 @use "../../styles/partials/variables" as *;
 
 .tickets {
-  margin: 0.5rem;
+  margin: 0 0.5rem;
   background-color: white;
   display: flex;
 
   &__container {
     display: flex;
     flex-direction: column;
+  }
+
+  &-cut {
+    margin: 0 0.5rem;
+    background-color: white;
   }
 }
