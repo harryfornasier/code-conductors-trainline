@@ -17,7 +17,12 @@
   &-cut {
     margin: 0 0.5rem;
     background-color: white;
-    border-radius: -5px;
+
+    border-radius: 0 0 5px 5px;
+  }
+
+  &-cut__manage {
+    padding: 1rem;
   }
 }
 
@@ -32,6 +37,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__line {
@@ -44,4 +50,14 @@
     left: unset;
     right: -10px;
   }
+}
+
+.booking {
+  padding: 1rem;
+  background-color: white;
+  margin: 0 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  height: 5rem;
+  border-radius: 5px;
 }

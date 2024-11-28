@@ -28,6 +28,12 @@ export default function () {
           <p>Booking Reference</p>
         </div>
       </section>
+      <section className="booking">
+        <div className="booking-text__container">
+          <p className="booking__text">All Bookings</p>
+          <p className="booking__text">View, refund and expense</p>
+        </div>
+      </section>
     </>
   );
 }
