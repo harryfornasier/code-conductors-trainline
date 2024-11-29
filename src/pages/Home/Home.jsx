@@ -7,6 +7,7 @@ import SplitSave from "../../assets/icons/SplitSave.png";
 import personal from "../../assets/icons/personal.png";
 import hotel from "../../assets/icons/hotel.png";
 import parking from "../../assets/icons/parking.png";
+import { Link } from "react-router-dom";
 
 export default function () {
   return (
@@ -38,8 +39,8 @@ export default function () {
             How to use your eticket
           </p>
           <p className="tickets__info-text">
-            You can also print this ticket or add to Apple Wallet. Only available on
-            limited routes and ticket types
+            You can also print this ticket or add to Apple Wallet. Only
+            available on limited routes and ticket types
           </p>
         </div>
       </section>
@@ -69,7 +70,9 @@ export default function () {
                   <div className="timeline__circle timeline__circle--highlight"></div>
                 </div>
                 <p className="timeline__text">8:00pm</p>
-                <p className="timeline__text">London St Pancras International</p>
+                <p className="timeline__text">
+                  London St Pancras International
+                </p>
               </div>
               <div className="timeline__row">
                 <div className="timeline__line">
@@ -89,7 +92,9 @@ export default function () {
             <div className="splitsave__logo">
               <img src={SplitSave} alt="" />
             </div>
-            <p className="split__text">Show different tickets along your journey</p>
+            <p className="split__text">
+              Show different tickets along your journey
+            </p>
             <div className="splitsave__journey">
               <p className="splitsave__journey-text">View Journey</p>
             </div>
@@ -108,7 +113,9 @@ export default function () {
             <div className="carriage__container">
               <img src={ticket} alt="" />
               <div className="carriage__seat-text">
-                <p className="carriage__text carriage__text--header">Ticket Conditions</p>
+                <p className="carriage__text carriage__text--header">
+                  Ticket Conditions
+                </p>
                 <p className="carriage__text">Specified train(s) only</p>
               </div>
             </div>
@@ -126,18 +133,19 @@ export default function () {
                 <p className="details__text">timlog@gmail.com</p>
               </div>
             </div>
-
-            <div className="details__share">
-              <div className="details__text-share">
-                <p className="details__text--header">Share your Journey</p>
-                <p className="details__text">
-                  Travel together with friends or family effortlessly
-                </p>
+            <Link to="/journey-details">
+              <div className="details__share">
+                <div className="details__text-share">
+                  <p className="details__text--header">Share your Journey</p>
+                  <p className="details__text">
+                    Travel together with friends or family effortlessly
+                  </p>
+                </div>
+                <div className="details__chevron">
+                  <p>⟩</p>
+                </div>
               </div>
-              <div className="details__chevron">
-                <p>⟩</p>
-              </div>
-            </div>
+            </Link>
           </section>
         </div>
       </section>
