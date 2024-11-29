@@ -3,10 +3,86 @@
 .tickets {
   margin: 0 0.5rem;
   background-color: white;
-  display: flex;
 
-  &__text {
-    padding: 0.5rem;
+  border-radius: 5px 5px 0 0;
+
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    height: 5rem;
+  }
+
+  &__header-left {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  &__text-header {
+    font-weight: bold;
+  }
+
+  &__arrow {
+    background-color: #001848;
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    margin: 0 auto;
+    display: flex;
+    width: 23rem;
+    height: 2rem;
+    background-color: $background-brand-color;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 1.5rem;
+
+    align-items: center;
+
+    &-text {
+      padding: 1rem;
+      color: white;
+    }
+  }
+
+  &__personal {
+    height: 25px;
+    background-color: #deebfe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.4rem;
+    border-radius: 5px 0 0 5px;
+
+    &-text {
+      color: #0d3198;
+    }
+  }
+
+  &__info {
+    width: 23rem;
+    margin: 0 auto;
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+    &-text {
+      text-align: center;
+      padding-bottom: 1rem;
+
+      &--header {
+        font-weight: bold;
+      }
+    }
   }
 
   &__container {
@@ -17,8 +93,6 @@
   &-cut {
     margin: 0 0.5rem;
     background-color: white;
-
-    border-radius: 0 0 5px 5px;
   }
 
   &-cut__manage {
@@ -52,6 +126,76 @@
   }
 }
 
+.timeline {
+  display: flex;
+  flex-direction: column;
+  &__info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 23rem;
+    border-radius: 4px;
+    background-color: #f8f9f8;
+    border: solid 1px #e9eae9;
+  }
+  &__container {
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  &__column-1 {
+    height: 100%;
+    padding-left: 1rem;
+  }
+
+  &__row {
+    gap: 2rem;
+    display: flex;
+    justify-content: start;
+  }
+
+  &__circle {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: #001848;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    margin-left: -0.48rem;
+    background-color: #d0d4d5;
+
+    &--highlight {
+      border: solid 1px #5e5e5e;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__line {
+    background-color: #d0d4d5;
+    display: flex;
+    flex-direction: column;
+    width: 0.1rem;
+    height: 100%;
+  }
+
+  &__space {
+    height: 0.1rem;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .booking {
   padding: 1rem;
   background-color: white;
@@ -60,4 +204,96 @@
   display: flex;
   height: 5rem;
   border-radius: 5px;
+}
+
+.splitsave {
+  margin-top: 1rem;
+  &__journey {
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 23rem;
+    background-color: white;
+    border: solid 1px #e9eae9;
+
+    &-text {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.carriage {
+  margin-top: 1rem;
+
+  &__text {
+    &--header {
+      font-weight: bold;
+    }
+  }
+
+  &__container {
+    gap: 0.3rem;
+    padding: 1rem 0;
+    border-bottom: solid 1px #e9eae9;
+    display: flex;
+  }
+}
+
+.details {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &__person {
+    gap: 0.3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__email {
+    gap: 0.3rem;
+    display: flex;
+  }
+
+  &__share {
+    width: 23rem;
+    background-color: #f3f9f7;
+    border: solid 2px $primary-brand-colour;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text--header {
+    font-weight: bold;
+  }
+
+  &__chevron {
+    padding-right: 0.5rem;
+  }
+
+  &__text-share {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.manage {
+  margin: 0 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  // border-top: dashed 3px #f3f9f7;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(174, 174, 174) 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: top;
+  background-size: 14px 1px;
+  background-repeat: repeat-x;
+
+  &__header {
+    font-weight: bold;
+  }
 }
