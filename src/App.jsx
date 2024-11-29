@@ -4,13 +4,12 @@ import PopUp2Page from "./pages/PopUp2page/PopUp2Page.jsx";
 import FooterNav from "./components/FooterNav/FooterNav";
 import Header from "./components/Header/Header";
 import Send from "./pages/Send/Send";
-
 import JourneyDetails from "./pages/JourneyDetails/JourneyDetails";
 import "./app.scss";
-
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/send" element={<Send />} />

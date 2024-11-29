@@ -14,7 +14,7 @@ export default function () {
   return (
     <>
       <div className="tickets__advert-container">
-        <img src={advert} alt="" />
+        <img className="tickets__advert" src={advert} alt="" />
       </div>
       <section className="tickets">
         <div className="tickets__header">

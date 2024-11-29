@@ -52,6 +52,12 @@
     }
   }
 
+  &__advert-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
   &__personal {
     height: 25px;
     background-color: #deebfe;
