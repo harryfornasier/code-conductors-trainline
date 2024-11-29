@@ -8,6 +8,7 @@ import personal from "../../assets/icons/personal.png";
 import hotel from "../../assets/icons/hotel.png";
 import parking from "../../assets/icons/parking.png";
 import { Link } from "react-router-dom";
+import FooterNav from "../../components/FooterNav/FooterNav";
 
 export default function () {
   return (
@@ -39,8 +40,8 @@ export default function () {
             How to use your eticket
           </p>
           <p className="tickets__info-text">
-            You can also print this ticket or add to Apple Wallet. Only
-            available on limited routes and ticket types
+            You can also print this ticket or add to Apple Wallet. Only available on
+            limited routes and ticket types
           </p>
         </div>
       </section>
@@ -70,9 +71,7 @@ export default function () {
                   <div className="timeline__circle timeline__circle--highlight"></div>
                 </div>
                 <p className="timeline__text">8:00pm</p>
-                <p className="timeline__text">
-                  London St Pancras International
-                </p>
+                <p className="timeline__text">London St Pancras International</p>
               </div>
               <div className="timeline__row">
                 <div className="timeline__line">
@@ -92,9 +91,7 @@ export default function () {
             <div className="splitsave__logo">
               <img src={SplitSave} alt="" />
             </div>
-            <p className="split__text">
-              Show different tickets along your journey
-            </p>
+            <p className="split__text">Show different tickets along your journey</p>
             <div className="splitsave__journey">
               <p className="splitsave__journey-text">View Journey</p>
             </div>
@@ -113,9 +110,7 @@ export default function () {
             <div className="carriage__container">
               <img src={ticket} alt="" />
               <div className="carriage__seat-text">
-                <p className="carriage__text carriage__text--header">
-                  Ticket Conditions
-                </p>
+                <p className="carriage__text carriage__text--header">Ticket Conditions</p>
                 <p className="carriage__text">Specified train(s) only</p>
               </div>
             </div>
@@ -155,6 +150,7 @@ export default function () {
           <p className="manage__text">Booking reference: 009018228112</p>
         </div>
       </section>
+      <FooterNav />
     </>
   );
 }

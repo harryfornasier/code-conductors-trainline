@@ -7,6 +7,7 @@ import rightArrow from "../../assets/icons/vector.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PopUp2 from "../../components/PopUp2/PopUp2.jsx";
+import FooterNav from "../../components/FooterNav/FooterNav.jsx";
 
 const JourneyDetails = () => {
   const [isvisible, setIsVisible] = useState(false);
@@ -39,8 +40,8 @@ const JourneyDetails = () => {
             </div>
             <div className="JourneyDetails__text-wrapper">
               <p className="JourneyDetails__para-text grey">
-                Specified train only. No refunds. Outbound: Only valid on booked
-                London North Eastern Railway s...
+                Specified train only. No refunds. Outbound: Only valid on booked London
+                North Eastern Railway s...
               </p>
 
               <p className="JourneyDetails__main-more"> More</p>
@@ -96,6 +97,7 @@ const JourneyDetails = () => {
           </div>
         </Link>
       </main>
+      <FooterNav />
     </>
   );
 };

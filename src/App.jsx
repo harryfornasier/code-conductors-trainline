@@ -5,8 +5,8 @@ import FooterNav from "./components/FooterNav/FooterNav";
 import Header from "./components/Header/Header";
 import Send from "./pages/Send/Send";
 
-import JourneyDetails from './pages/JourneyDetails/JourneyDetails';
-import './app.scss';
+import JourneyDetails from "./pages/JourneyDetails/JourneyDetails";
+import "./app.scss";
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
         <Route path="/journey-details" element={<JourneyDetails />} />
         <Route path="/popup2" element={<PopUp2Page />} />
       </Routes>
-      <FooterNav />
     </BrowserRouter>
   );
 }
