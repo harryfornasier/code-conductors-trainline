@@ -68,10 +68,12 @@ export default function PopUp2() {
               <img className="airdrop-icon" src={AirDrop} alt="" />
               <p className="small-text">AirDrop</p>
             </div>
-            <div className="popup2__second-part__icon-box">
-              <img src={Messages} alt="" />
-              <p className="small-text">Messages</p>
-            </div>
+            <Link to="/send">
+              <div className="popup2__second-part__icon-box">
+                <img src={Messages} alt="" />
+                <p className="small-text">Messages</p>
+              </div>
+            </Link>
             <div className="popup2__second-part__icon-box">
               <img src={Mail} alt="" />
               <p className="small-text">Mail</p>
