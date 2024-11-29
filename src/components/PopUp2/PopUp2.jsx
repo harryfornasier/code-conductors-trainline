@@ -17,6 +17,7 @@ import Book from "../../assets/images/popUp2/Symbol.png";
 import Star from "../../assets/images/popUp2/Symbol-1.png";
 import Magnifier from "../../assets/images/popUp2/Symbol-3.png";
 import PlusSQuare from "../../assets/images/popUp2/Symbol-2.png";
+import { Link } from "react-router-dom";
 
 export default function PopUp2() {
   return (
@@ -27,11 +28,13 @@ export default function PopUp2() {
             <img src={trainLineLogo} alt="trainline Logo" />
             <p>Trainline: Share My Journey</p>
           </div>
-          <img
-            className="popup2__close-button"
-            src={closeButton}
-            alt="close button"
-          />
+          <Link to="/journey-details">
+            <img
+              className="popup2__close-button"
+              src={closeButton}
+              alt="close button"
+            />
+          </Link>
         </div>
         <div className="popup2__second-part">
           <div className="popup2__second-part__icon-box">
