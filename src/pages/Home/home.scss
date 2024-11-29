@@ -27,6 +27,11 @@
     background-color: #001848;
     height: 1.5rem;
     width: 2rem;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   &__button {
@@ -88,8 +93,6 @@
   &-cut {
     margin: 0 0.5rem;
     background-color: white;
-
-    border-radius: 0 0 5px 5px;
   }
 
   &-cut__manage {
@@ -127,8 +130,13 @@
   display: flex;
   flex-direction: column;
   &__info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
     padding: 1rem;
     width: 23rem;
+    border-radius: 4px;
     background-color: #f8f9f8;
     border: solid 1px #e9eae9;
   }
@@ -159,6 +167,10 @@
     height: 1rem;
     margin-left: -0.48rem;
     background-color: #d0d4d5;
+
+    &--highlight {
+      border: solid 1px #5e5e5e;
+    }
   }
 
   &__text {
@@ -195,15 +207,93 @@
 }
 
 .splitsave {
+  margin-top: 1rem;
   &__journey {
+    margin-top: 1rem;
+    border-radius: 4px;
     padding: 1rem;
     width: 23rem;
     background-color: white;
     border: solid 1px #e9eae9;
+
+    &-text {
+      text-align: center;
+      font-weight: bold;
+    }
   }
 }
 
 .carriage {
+  margin-top: 1rem;
+
+  &__text {
+    &--header {
+      font-weight: bold;
+    }
+  }
+
   &__container {
+    gap: 0.3rem;
+    padding: 1rem 0;
+    border-bottom: solid 1px #e9eae9;
+    display: flex;
+  }
+}
+
+.details {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &__person {
+    gap: 0.3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__email {
+    gap: 0.3rem;
+    display: flex;
+  }
+
+  &__share {
+    width: 23rem;
+    background-color: #f3f9f7;
+    border: solid 2px $primary-brand-colour;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text--header {
+    font-weight: bold;
+  }
+
+  &__chevron {
+    padding-right: 0.5rem;
+  }
+
+  &__text-share {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.manage {
+  margin: 0 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  // border-top: dashed 3px #f3f9f7;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(174, 174, 174) 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: top;
+  background-size: 14px 1px;
+  background-repeat: repeat-x;
+
+  &__header {
+    font-weight: bold;
   }
 }
