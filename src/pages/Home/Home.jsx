@@ -7,12 +7,14 @@ import SplitSave from "../../assets/icons/SplitSave.png";
 import personal from "../../assets/icons/personal.png";
 import hotel from "../../assets/icons/hotel.png";
 import parking from "../../assets/icons/parking.png";
+import { Link } from "react-router-dom";
+import FooterNav from "../../components/FooterNav/FooterNav";
 
 export default function () {
   return (
     <>
       <div className="tickets__advert-container">
-        <img src={advert} alt="" />
+        <img className="tickets__advert" src={advert} alt="" />
       </div>
       <section className="tickets">
         <div className="tickets__header">
@@ -126,18 +128,19 @@ export default function () {
                 <p className="details__text">timlog@gmail.com</p>
               </div>
             </div>
-
-            <div className="details__share">
-              <div className="details__text-share">
-                <p className="details__text--header">Share your Journey</p>
-                <p className="details__text">
-                  Travel together with friends or family effortlessly
-                </p>
+            <Link to="/journey-details">
+              <div className="details__share">
+                <div className="details__text-share">
+                  <p className="details__text--header">Share your Journey</p>
+                  <p className="details__text">
+                    Travel together with friends or family effortlessly
+                  </p>
+                </div>
+                <div className="details__chevron">
+                  <p>⟩</p>
+                </div>
               </div>
-              <div className="details__chevron">
-                <p>⟩</p>
-              </div>
-            </div>
+            </Link>
           </section>
         </div>
       </section>
@@ -147,6 +150,7 @@ export default function () {
           <p className="manage__text">Booking reference: 009018228112</p>
         </div>
       </section>
+      <FooterNav />
     </>
   );
 }
