@@ -12,7 +12,9 @@ export default function Send() {
           <div className="phone__header">
             <div className="phone__header-container">
               <p className="phone__header-header">New iMessage</p>
-              <p className="phone__header-text bluetext">Cancel</p>
+              <Link to="/popup2">
+                <p className="phone__header-text bluetext">Cancel</p>
+              </Link>
             </div>
           </div>
 
@@ -35,8 +37,8 @@ export default function Send() {
                 <div className="phone__message-card">
                   <div className="phone__text-container">
                     <p className="phone__text">
-                      Hi! Tim is travelling from Brighton to York! Join the journey and
-                      travel together.
+                      Hi! Tim is travelling from Brighton to York! Join the
+                      journey and travel together.
                     </p>
                   </div>
                   <Link to={"/"}>

@@ -1,6 +1,17 @@
 @use '../../styles/partials/variables' as *;
 
+p {
+  font-size: 0.8rem;
+}
+
+.grey {
+  color: grey;
+}
+
 .JourneyDetails {
+  display: flex;
+  flex-direction: column;
+
   &__title-wrapper {
     display: flex;
     flex-direction: column;
@@ -17,6 +28,10 @@
     padding-top: 1rem;
   }
 
+  &__main-wrapper {
+    background-color: rgb(248, 244, 244);
+  }
+
   &__main {
     margin: 1rem 0.5rem 0 0.5rem;
     display: flex;
@@ -24,7 +39,8 @@
     padding-left: 0.5rem;
     border-radius: 10px;
     background-color: white;
-    position: absolute;
+    box-shadow: 2px -2px 1.5px rgb(218, 217, 217);
+    margin-bottom: 2rem;
   }
 
   &__main-more {
@@ -49,18 +65,20 @@
   &__advance {
     margin: 0;
     padding: 0.3rem;
+    padding-right: 3rem;
   }
 
   &__arrow-wrapper {
     position: relative;
     width: 2rem;
     top: 1.6rem;
+    left: -0.26rem;
   }
 
   &__advance-wrapper {
-    background-color: #f5f7f8;
+    background-color: #e1e5e8;
 
-    width: 45%;
+    width: 55%;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -69,18 +87,24 @@
 
   &__ball-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 106.3%;
+    margin-left: -1.1rem;
+    align-items: center;
   }
 
   &__ball {
     border-radius: 100%;
     width: 1rem;
+
     height: 1rem;
-    background-color: $background-brand-color;
+    background-color: rgb(248, 244, 244);
   }
 
-  &__line {
-    width: 308px;
+  &__line--dotted {
+    height: 0.1rem;
+    width: 100%;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%233F4B4EFF' stroke-width='4' stroke-dasharray='3%2c10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   }
 
   &__ball-left {
@@ -135,14 +159,16 @@
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
-    margin-top: 2rem;
+    padding-top: 1rem;
+
+    box-shadow: 0px -3px 1.5px rgb(212, 212, 212);
   }
 
   &__button {
     background-color: #2d00b1;
     width: 90%;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem 0 1rem 0;
     border-radius: 6px;
