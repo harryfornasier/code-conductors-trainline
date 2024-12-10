@@ -1,8 +1,14 @@
-# React + Vite
+# Code Conductors: Trainline Hackathon Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
+This project was developed in 24 hours as part of a hackathon challenge hosted by Trainline. The challenge was to answer the question:
 
-Currently, two official plugins are available:
+**"How might we connect rail travellers with one another to improve their travel experience and/or find the best value?"**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Our solution focuses on sharing the journey with a friend after you bought the ticket. The friend would click on the shared link and get an option to easily buy a ticket on a seat next to them.
+
+---
+
+## Functionality
+
+There is not much functionality and only 4 screens. But in my opinion it includes some pretty impressive CSS
