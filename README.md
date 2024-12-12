@@ -11,4 +11,4 @@ Our solution focuses on sharing the journey with a friend after you bought the t
 
 ## Functionality
 
-There is not much functionality and only 4 screens. But in my opinion it includes some pretty impressive CSS
+There is not much functionality and only 4 pages. But in my opinion it includes some pretty impressive CSS
